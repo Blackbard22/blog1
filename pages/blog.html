@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة - سمية السليماني</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="blog-navbar">
+        <div class="blog-logo">سمية السليماني</div>
+        <ul class="blog-nav-links">
+            <li><a href="/consultation">احجز استشارتك</a></li>
+            <li><a href="/page2">مشاركات</a></li>
+            <li><a href="/blog">مدونات</a></li>
+        </ul>
+        <div class="blog-nav-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="blog-mobile-nav">
+        <ul class="blog-mobile-links">
+            <li><a href="/page2">مشاركات</a></li>
+            <li><a href="/blog">مدونات</a></li>
+        </ul>
+    </div>
+
+    <div class="blog-container">
+
+
+
+    <header class="blog-header">
+        <h1>المدونة</h1>
+        <p class="blog-description">أحدث المقالات والأفكار في مجال التعليم والتطوير</p>
+    </header>
+
+    <!-- Blog Grid -->
+    <main class="blog-grid">
+        <!-- Blog Card 1 -->
+        <article class="blog-card">
+            <div class="blog-card-image">
+                <img src="../content/placeholder1.jpg" alt="مقال عن التعليم">
+            </div>
+            <div class="blog-card-content">
+                <h2>عنوان المقال الأول</h2>
+                <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي...</p>
+                <div class="blog-meta">
+                    <span class="blog-date">٥ يناير ٢٠٢٤</span>
+                    <div class="blog-share">
+                        <button class="share-btn twitter" onclick="shareOnTwitter()">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                    </div>
+                </div>
+                <a href="#" class="read-more">اقرأ المزيد</a>
+            </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="blog-card">
+            <div class="blog-card-image">
+                <img src="../content/placeholder2.jpg" alt="مقال عن التطوير">
+            </div>
+            <div class="blog-card-content">
+                <h2>عنوان المقال الثاني</h2>
+                <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي...</p>
+                <div class="blog-meta">
+                    <span class="blog-date">٣ يناير ٢٠٢٤</span>
+                    <div class="blog-share">
+                        <button class="share-btn twitter" onclick="shareOnTwitter()">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                    </div>
+                </div>
+                <a href="#" class="read-more">اقرأ المزيد</a>
+            </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="blog-card">
+            <div class="blog-card-image">
+                <img src="../content/placeholder1.jpg" alt="مقال عن الابتكار">
+            </div>
+            <div class="blog-card-content">
+                <h2>عنوان المقال الثالث</h2>
+                <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي...</p>
+                <div class="blog-meta">
+                    <span class="blog-date">١ يناير ٢٠٢٤</span>
+                    <div class="blog-share">
+                        <button class="share-btn twitter" onclick="shareOnTwitter()">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                    </div>
+                </div>
+                <a href="#" class="read-more">اقرأ المزيد</a>
+            </div>
+        </article>
+    </main>
+
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <p>البريد الإلكتروني: info@example.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>تابعنا</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i> تويتر</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> لينكد إن</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة © ٢٠٢٤</p>
+        </div>
+    </footer>
+
+    <script>
+        function shareOnTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('شاهد هذا المقال المميز!');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+        }
+
+        function shareOnLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+        }
+    </script>
+</body>
+</html> 

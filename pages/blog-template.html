@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عنوان المقال - سمية السليماني</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="blog-template.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <!-- <nav class="blog-navbar">
+        <div class="blog-nav-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="blog-nav-links">
+            <li><a href="/consultation">احجز استشارتك</a></li>
+            <li><a href="/page2">مشاركات</a></li>
+            <li><a href="/blog">مدونات</a></li>
+        </ul>
+        <div class="blog-logo">سمية السليماني</div>
+    </nav> -->
+    <nav class="blog-navbar">
+        <div class="blog-logo">سمية السليماني</div>
+        <ul class="blog-nav-links">
+            <li><a href="/consultation">احجز استشارتك</a></li>
+            <li><a href="/page2">مشاركات</a></li>
+            <li><a href="/blog">مدونات</a></li>
+        </ul>
+        <div class="blog-nav-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="blog-mobile-nav">
+        <ul class="blog-mobile-links">
+            <li><a href="/page2">مشاركات</a></li>
+            <li><a href="/blog">مدونات</a></li>
+        </ul>
+    </div>
+
+    <div class="blog-post-container">
+        <!-- Blog Post Header -->
+        <header class="blog-post-header">
+            <div class="blog-post-meta">
+                <span class="blog-post-date">٥ يناير ٢٠٢٤</span>
+                <div class="blog-post-category">التعليم والتطوير</div>
+            </div>
+            <h1 class="blog-post-title">عنوان المقال الرئيسي</h1>
+            <div class="blog-post-author">
+                <img src="../content/placeholder1.jpg" alt="صورة الكاتب" class="author-image">
+                <div class="author-info">
+                    <span class="author-name">سمية السليماني</span>
+                    <span class="author-title">استشارية تربوية</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="blog-post-image">
+            <img src="../content/placeholder1.jpg" alt="صورة المقال">
+        </div>
+
+        <!-- Blog Post Content -->
+        <article class="blog-post-content">
+            <p class="blog-post-excerpt">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            </p>
+
+            <h2>العنوان الفرعي الأول</h2>
+            <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            </p>
+
+            <blockquote>
+                هذا النص هو مثال لنص اقتباس يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي.
+            </blockquote>
+
+            <h2>العنوان الفرعي الثاني</h2>
+            <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            </p>
+
+            <!-- Share Section -->
+            <div class="blog-post-share">
+                <h3>شارك المقال</h3>
+                <div class="share-buttons">
+                    <button class="share-btn twitter" onclick="shareOnTwitter()">
+                        <i class="fab fa-twitter"></i>
+                        <span>شارك على تويتر</span>
+                    </button>
+                    <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
+                        <i class="fab fa-linkedin"></i>
+                        <span>شارك على لينكد إن</span>
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Related Posts -->
+        <section class="related-posts">
+            <h2>مقالات ذات صلة</h2>
+            <div class="related-posts-grid">
+                <article class="related-post-card">
+                    <img src="../content/placeholder2.jpg" alt="مقال ذو صلة">
+                    <div class="related-post-content">
+                        <h3>عنوان المقال المرتبط</h3>
+                        <span class="related-post-date">٣ يناير ٢٠٢٤</span>
+                    </div>
+                </article>
+                <article class="related-post-card">
+                    <img src="../content/placeholder1.jpg" alt="مقال ذو صلة">
+                    <div class="related-post-content">
+                        <h3>عنوان المقال المرتبط</h3>
+                        <span class="related-post-date">١ يناير ٢٠٢٤</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <p>البريد الإلكتروني: info@example.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>تابعنا</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i> تويتر</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> لينكد إن</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة © ٢٠٢٤</p>
+        </div>
+    </footer>
+
+    <script>
+        function shareOnTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('شاهد هذا المقال المميز!');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+        }
+
+        function shareOnLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+        }
+    </script>
+</body>
+</html> 
