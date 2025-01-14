@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المدونة - سمية السليماني</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="blog2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,7 +13,6 @@
     <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="blog-navbar">
         <div class="blog-logo">سمية السليماني</div>
         <ul class="blog-nav-links">
@@ -42,12 +41,31 @@
         <p class="blog-description">أحدث المقالات والأفكار في مجال التعليم والتطوير</p>
     </header>
 
-    <!-- Blog Grid -->
+
+
+    <div class="search-blogs">
+        <input type="text" placeholder="ابحث عن مقال">
+        <div class="filter-container">
+            <img src="../../content/filter.svg" alt="filter" class="filter-icon">
+            <div class="filter-window">
+                <form class="filter-form">
+                    <div class="filter-options">
+                        <button type="button" class="filter-option" data-days="1">آخر يوم</button>
+                        <button type="button" class="filter-option" data-days="7">آخر أسبوع</button>
+                        <button type="button" class="filter-option" data-days="30">آخر شهر</button>
+                        <button type="button" class="filter-option" data-days="90">آخر 3 أشهر</button>
+                        <button type="button" class="filter-option" data-days="180">آخر 6 أشهر</button>
+                        <button type="button" class="filter-option" data-days="365">آخر سنة</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <main class="blog-grid">
-        <!-- Blog Card 1 -->
+
         <article class="blog-card">
             <div class="blog-card-image">
-                <img src="../content/down1.jpg" alt="مقال عن التعليم">
+                <img src="../../content/down1.jpg" alt="مقال عن التعليم">
             </div>
             <div class="blog-card-content">
                 <h2>عنوان المقال الأول</h2>
@@ -56,16 +74,16 @@
                     <span class="blog-date">٥ يناير ٢٠٢٤</span>
                     <div class="blog-share">
                         <button class="share-btn twitter" onclick="shareOnTwitter()">
-                            <img src="../content/twitter.svg" alt="twitter">
+                            <img src="../../content/twitter.svg" alt="twitter">
                         </button>
                         <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
-                            <img src="../content/linkedin.svg" alt="linkedin">
+                            <img src="../../content/linkedin.svg" alt="linkedin">
                         </button>
                     </div>
                 </div>
                 <a href="#" >
                     <div class="read-more">
-                        <img src="../content/arrow-up.svg" alt="arrow" >
+                        <img src="../../content/arrow-up.svg" alt="arrow" >
                             <p>
                                 اقرأ المزيد
                             </p>
@@ -75,10 +93,9 @@
             </div>
         </article>
 
-        <!-- Blog Card 2 -->
         <article class="blog-card">
             <div class="blog-card-image">
-                <img src="../content/speaking.png" alt="مقال عن التطوير">
+                <img src="../../content/speaking.png" alt="مقال عن التطوير">
             </div>
             <div class="blog-card-content">
                 <h2>عنوان المقال الثاني</h2>
@@ -87,16 +104,16 @@
                     <span class="blog-date">٣ يناير ٢٠٢٤</span>
                     <div class="blog-share">
                         <button class="share-btn twitter" onclick="shareOnTwitter()">
-                            <img src="../content/twitter.svg" alt="twitter">
+                            <img src="../../content/twitter.svg" alt="twitter">
                         </button>
                         <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
-                            <img src="../content/linkedin.svg" alt="linkedin">
+                            <img src="../../content/linkedin.svg" alt="linkedin">
                         </button>
                     </div>
                 </div>
                 <a href="#" ></a>
                     <div class="read-more">
-                        <img src="../content/arrow-up.svg" alt="arrow" >
+                        <img src="../../content/arrow-up.svg" alt="arrow" >
                             <p>
                                 اقرأ المزيد
                             </p>
@@ -105,10 +122,10 @@
             </div>
         </article>
 
-        <!-- Blog Card 3 -->
+ 
         <article class="blog-card">
             <div class="blog-card-image">
-                <img src="../content/down1.jpg" alt="مقال عن الابتكار">
+                <img src="../../content/down1.jpg" alt="مقال عن الابتكار">
             </div>
             <div class="blog-card-content">
                 <h2>عنوان المقال الثالث</h2>
@@ -117,16 +134,16 @@
                     <span class="blog-date">١ يناير ٢٠٢٤</span>
                     <div class="blog-share">
                         <button class="share-btn twitter" onclick="shareOnTwitter()">
-                            <img src="../content/twitter.svg" alt="twitter">
+                            <img src="../../content/twitter.svg" alt="twitter">
                         </button>
                         <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
-                            <img src="../content/linkedin.svg" alt="linkedin">
+                            <img src="../../content/linkedin.svg" alt="linkedin">
                         </button>
                     </div>
                 </div>
                 <a href="#" ></a>
                     <div class="read-more">
-                        <img src="../content/arrow-up.svg" alt="arrow" >
+                        <img src="../../content/arrow-up.svg" alt="arrow" >
                             <p>
                                 اقرأ المزيد
                             </p>
@@ -135,6 +152,38 @@
             </div>
         </article>
     </main>
+
+
+    <article class="blog-card">
+        <div class="blog-card-image">
+            <img src="../../content/down1.jpg" alt="مقال عن التعليم">
+        </div>
+        <div class="blog-card-content">
+            <h2>عنوان المقال الأول</h2>
+            <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي...</p>
+            <div class="blog-meta">
+                <span class="blog-date">٥ يناير ٢٠٢٤</span>
+                <div class="blog-share">
+                    <button class="share-btn twitter" onclick="shareOnTwitter()">
+                        <img src="../../content/twitter.svg" alt="twitter">
+                    </button>
+                    <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
+                        <img src="../../content/linkedin.svg" alt="linkedin">
+                    </button>
+                </div>
+            </div>
+            <a href="#" >
+                <div class="read-more">
+                    <img src="../../content/arrow-up.svg" alt="arrow" >
+                        <p>
+                            اقرأ المزيد
+                        </p>
+                </div>
+             </a>
+
+        </div>
+    </article>
+
 
 </div>
 
@@ -170,6 +219,49 @@
             const url = encodeURIComponent(window.location.href);
             window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
         }
+
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterIcon = document.querySelector('.filter-icon');
+            const filterWindow = document.querySelector('.filter-window');
+            const filterOptions = document.querySelectorAll('.filter-option');
+
+            // Toggle filter window
+            filterIcon.addEventListener('click', function(e) {
+                e.stopPropagation();
+                filterWindow.classList.toggle('active');
+            });
+
+            // Close filter window when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!filterWindow.contains(e.target) && !filterIcon.contains(e.target)) {
+                    filterWindow.classList.remove('active');
+                }
+            });
+
+            // Handle filter option selection
+            filterOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove active class from all options
+                    filterOptions.forEach(opt => opt.classList.remove('active'));
+                    // Add active class to selected option
+                    this.classList.add('active');
+
+                    const days = parseInt(this.dataset.days);
+                    const endDate = new Date();
+                    const startDate = new Date();
+                    startDate.setDate(endDate.getDate() - days);
+
+                    // Here you would typically filter the blog posts based on the date range
+                    console.log('Filtering posts between:', startDate.toISOString(), 'and', endDate.toISOString());
+
+                    // Close the filter window after a short delay
+                    setTimeout(() => {
+                        filterWindow.classList.remove('active');
+                    }, 300);
+                });
+            });
+        });
     </script>
 </body>
 </html> 

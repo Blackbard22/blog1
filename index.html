@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lateef:wght@200;300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     
 </head>
 
@@ -18,7 +20,6 @@
 <body>
     <div class="progress-container">
         <div class="progress-line"></div>
-        <!-- <div class="progress-box" data-section="hero"></div> -->
         <div class="progress-box" data-section="about"></div>
         <div class="progress-box" data-section="grid"></div>
         <div class="progress-box" data-section="consultation"></div>
@@ -27,23 +28,59 @@
     </div>
 
 
+    <header class="header-container">
+
+        <nav class="navbar">
+            <div class="consultation">
+                <a href="/consultation">احجز استشارتك</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/consultation">احجز استشارتك</a></li>
+                <li><a href="/page2">مشاركات</a></li>
+                <li><a href="/pages/blog.html">مدونات</a></li>
+            </ul>
+            <div class="mobile-nav-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">ماريا</div>
+        </nav>
+
+
+
+        <div class="hero-container">
+            <header class="hero">
+                <div class="hero-subsection">
+                    <img src="./content/cleaned_portrait2.png" alt="portrait">
+                    <div class="hero-text-container">
+                        <h1 class="hero-title">سمية السليماني</h1>
+                        <p class="subtitle">كاتبة مؤثرة ومهتمة بقضايا الإنسان والمجتمع. 
+                            مؤمنة بالقراءة قولًا وفعلًا
+                            شعارُها: فعلُ الكتابةِ أوكَد
+                            </p>
+                        <p class="hero-text">
+                            بعد أكثر من (22) عامًا في ساحات التعليم، وبعد مشوارٍ جميلٍ من العمل في المدارس وبين الطلاب. وبعد جرأة التحوُّل الوظيفي من الإدارة المدرسية إلى الإدارة الإشرافية. وبعد سنواتٍ من التواصلِ والحوارِ مع شخصياتٍ مختلفةٍ وكثيرة. وبعد تجربة تأليف مناهج العلوم الإنسانية عامة واللغة العربية خاصة. وبعد عزلةِ الكتب وتأملِ أحداث الزمن وقراءةِ وجهِ الحياة وملامحِها وتقلبِ النَّاسِ فيها شقيٍّ وسعيد. وبعد أكثر من (45) عامًا من العمر على وجهِ هذه الأرض، آثرتُ الخروجَ للنَّاسِ بخبراتي فقد يكونُ فيها ما ينفعُهم نحو حياةٍ طيبةٍ مباركة.
+                            <br>
+                            هذه سمية، تقرأُ استفساراتِكم بكلِّ حبٍّ وتقدير
     
-    <nav class="navbar">
-        <div class="consultation">
-            <a href="/consultation">احجز استشارتك</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </header>
         </div>
-        <ul class="nav-links">
-            <li><a href="/consultation">احجز استشارتك</a></li>
-            <li><a href="/page2">مشاركات</a></li>
-            <li><a href="/pages/blog.html">مدونات</a></li>
-        </ul>
-        <div class="mobile-nav-trigger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="logo">ماريا</div>
-    </nav>
+
+    </header>
+
+
+
+    
+
+
+
+
+
 
     <div class="mobile-nav">
         <ul class="mobile-nav-links">
@@ -59,31 +96,36 @@
     <div class="background-image2"></div>
     
 
-    <div class="hero-container">
-        <header class="hero">
-            <div class="hero-text-container">
-                <h1>سمية السليماني</h1>
-                <p class="subtitle">استشارية تربوية</p>
-                <p class="hero-text">
-                كنت لسنوات في وزارة التربية والتعليم وعندي رصيد من الخبرة وحابة أعمل الآتي:1/ توثيق هذه الخبرة بطريقة إبداعية  ومرتبة     2/ أن يكون الموقع أداة للتواصل معي في حال رغبة أي حد بحجز استشارة.     3/ أنا كاتبة وأريد أرفع أي مقال أكتبه وأحيانا أشارك في برامج إذاعية وكذلك حابة أرفع الحلقات.
-            </p>
-            </div>
-        </header>
-    </div>
+    
 
     <div class="scroll-under"></div>
     
 
     <section id="about" class="about-section">
-        <h2>الكتابة قيد وملخصات الكتب التي قرأتها</h2>   
+        <div class="about-title">
+            <div class="about-section-header">
+                <h2>الكتابة قيد وملخصات الكتب التي قرأتها</h2>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-button prev">
+                    <img src="./content/arrow.svg" alt="prev">
+                </button>
+                <button class="carousel-button next">
+                    <img src="./content/arrow.svg" alt="next">
+                </button>
+            </div>
+        </div>
         <div class="carousel-container">
-            <button class="carousel-button prev">&#10094;</button>
             <div class="carousel-track">
                 <div class="carousel-slide">
                     <div class="about-card">
                         <img src="./content/down1.jpg" alt="book1">
                         <h3>الكتاب الأول</h3>
                         <p>ان وتم صفحة التّحول الأمريكية, تونس يتمكن الربيع، و قام. جسيمة والقرى مليارات جُل في, أفاق أراض مليون جهة با.</p>
+                        <div class="about-read-more">
+                        <p>اقرا المزيد</p>
+                        <img src="./content/arrow-up.svg" alt="arrow"/>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-slide">
@@ -91,6 +133,10 @@
                         <img src="./content/speaking.png" alt="book2">
                         <h3>الكتاب الثاني</h3>
                         <p>ان وتم صفحة التّحول الأمريكية, تونس يتمكن الربيع، و قام. جسيمة والقرى مليارات جُل في, أفاق أراض مليون جهة با.</p>
+                        <div class="about-read-more">
+                            <p>اقرا المزيد</p>
+                            <img src="./content/arrow-up.svg" alt="arrow"/>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-slide">
@@ -98,40 +144,53 @@
                         <img src="./content/down1.jpg" alt="book3">
                         <h3>الكتاب الثالث</h3>
                         <p>ان وتم صفحة التّحول الأمريكية, تونس يتمكن الربيع، و قام. جسيمة والقرى مليارات جُل في, أفاق أراض مليون جهة با.</p>
+                        <div class="about-read-more">
+                            <p>اقرا المزيد</p>
+                            <img src="./content/arrow-up.svg" alt="arrow"/>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-button next">&#10095;</button>
-            <div class="carousel-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+            <div class="pagination">
+               
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
             </div>
         </div>
 
+        <div class="section-header">
+            <h2>البرامج التدريبية</h2>
+        </div>
         <div class="grid-sections">
             <div class="grid-item">
-                <h2>البكالوريوس والماجستير</h2>
-                <p>أكثر من 30 برنامجًا متعدد اللغات متاح في التخصصات التالية: الهندسة، الاقتصاد، العلوم الطبيعية، علوم الكمبيوتر، التعليم، الاتصال، والتصميم والفن. بعض برامج الماجستير تُدرس بالكامل باللغة الإنجليزية.</p>
+                <h2>المثال الأول</h2>
+                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. يمكن أن يتم تعديل هذا النص أو استبداله بنص آخر. الهدف من هذا النص هو أن يحتل مساحة في التصميم.</p>
             </div>
             <div class="grid-separator-vertical"></div>
             <div class="grid-item">
-                <h2>الدكتوراه</h2>
-                <p>من أولوياتنا الاستثمار بشكل كبير في تنفيذ وتعزيز الأنشطة البحثية وكذلك تدريب الباحثين الشباب. عشرة برامج دكتوراه فعالة ومنظمة تمكنهم من متابعة مسيرتهم المهنية في الأوساط الأكاديمية.</p>
+                <h2>المثال الثاني</h2>
+                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. يمكن أن يتم تعديل هذا النص أو استبداله بنص آخر. الهدف من هذا النص هو أن يحتل مساحة في التصميم.</p>
             </div>
             <div class="grid-separator-horizontal"></div>
             <div class="grid-item">
-                <h2>الدورات الإضافية</h2>
-                <p>محو الأمية التقنية والمرونة الأكاديمية من أكبر تحديات المجتمع الحديث. نقدم مجموعة من الدورات الإضافية والبرامج الفرعية لمساعدة طلابنا على مواجهة هذا التحدي بكفاءة.</p>
+                <h2>المثال الثالث</h2>
+                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. يمكن أن يتم تعديل هذا النص أو استبداله بنص آخر. الهدف من هذا النص هو أن يحتل مساحة في التصميم.</p>
             </div>
             <div class="grid-separator-horizontal"></div>
             <div class="grid-item">
-                <h2>التعلم مدى الحياة</h2>
-                <p>إنه برنامج تعليمي متعدد التخصصات مفتوح لكل من يرغب في الانضمام. يتم تقديم قائمة كبيرة من الدورات كل فصل دراسي: من الثقافة إلى التكنولوجيا والعلوم الاجتماعية والأعمال والاستدامة والاتصال.</p>
+                <h2>المثال الرابع</h2>
+                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. يمكن أن يتم تعديل هذا النص أو استبداله بنص آخر. الهدف من هذا النص هو أن يحتل مساحة في التصميم.</p>
             </div>
         </div>
 
         <section class="consultation-section">
+            <div class="section-header">
+                <h2>الاستشارات</h2>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-number">1</div>
@@ -167,92 +226,48 @@
             </div>
         </section>
 
-        <section class="creative-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2>أفكار إبداعية</h2>
-                    <p class="subtitle">نقدم حلولاً مبتكرة تجمع بين الإبداع والتكنولوجيا</p>
-                </div>
-                <div class="creative-grid">
-                    <div class="creative-item">
-                        <div class="creative-content">
-                            <div class="creative-icon">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <h3>تصميم تفاعلي</h3>
-                            <p>نصمم تجارب مستخدم فريدة تجمع بين الجمال والوظائف العملية</p>
-                            <div class="hover-content">
-                                <a href="#" class="learn-more">اكتشف المزيد</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="creative-item featured">
-                        <div class="creative-content">
-                            <div class="creative-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <h3>حلول مبتكرة</h3>
-                            <p>نطور حلولاً إبداعية تلبي احتياجات عملائنا وتتجاوز توقعاتهم</p>
-                            <div class="hover-content">
-                                <a href="#" class="learn-more">اكتشف المزيد</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="creative-item">
-                        <div class="creative-content">
-                            <div class="creative-icon">
-                                <i class="fas fa-paint-brush"></i>
-                            </div>
-                            <h3>تصميم إبداعي</h3>
-                            <p>نبتكر تصاميم فريدة تعكس هوية عملائنا وتحقق أهدافهم</p>
-                            <div class="hover-content">
-                                <a href="#" class="learn-more">اكتشف المزيد</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    
 
         <section class="testimonials-section">
+            <div class="section-header">
+                <h2>الخبرة السابقة</h2>
+            </div>
             <div class="testimonials-container">
                 <div class="testimonial-main">
                     <div class="testimonial-content active" data-id="1">
-                        <h2>سارة المحمد - مصممة واجهات المستخدم</h2>
-                        <p>عندما بدأت في إجراء المقابلات، كنت أواجه صعوبة في عرض إبداعي وعملية التصميم بوضوح. بعد استخدام خدمات الاستشارة، تعلمت كيفية توضيح قرارات التصميم وإبراز أسلوبي الفريد. لم يمض وقت طويل حتى حصلت على وظيفة أحلامي كمصممة واجهات المستخدم. أنا الآن أعمل على مشاريع مثيرة، ولم أكن لأحقق ذلك بدون الملاحظات الشخصية التي تلقيتها</p>
+                        <h2>المثال الأول - مستشارة تطوير</h2>
+                        <p>تجربتي مع الخدمات الاستشارية كانت مميزة للغاية. ساعدتني في تطوير مهاراتي المهنية وفتحت لي آفاقاً جديدة في مجال عملي. أقدر كثيراً الدعم المستمر والتوجيه المهني الذي تلقيته، والذي ساهم بشكل كبير في تحقيق أهدافي المهنية.</p>
                     </div>
                     <div class="testimonial-content" data-id="2">
-                        <h2>ياسمين ليفي - مديرة مشاريع</h2>
-                        <p>تتطلب إدارة المشاريع المعقدة مهارات تواصل وقيادة واضحة. ساعدتني الاستشارات في تحسين نهجي في إدارة المشاريع وعرض خبرتي بشكل فعال. كانت المقابلات التجريبية لا تقدر بثمن في التحضير للأسئلة الصعبة حول التعامل مع النزاعات في الفريق ومواعيد تسليم المشروع</p>
+                        <h2>المثال الثاني - مديرة أعمال</h2>
+                        <p>الخدمات المقدمة تجاوزت توقعاتي بكثير. التوجيه المهني والنصائح العملية التي تلقيتها كانت قيّمة جداً وساعدتني في تحسين أدائي المهني. أنصح بشدة كل من يسعى للتطور المهني بالاستفادة من هذه الخدمات.</p>
                     </div>
                     <div class="testimonial-content" data-id="3">
-                        <h2>نور الهاشمي - مطورة برمجيات</h2>
-                        <p>يمكن أن تكون المقابلات التقنية مخيفة، لكن جلسات الممارسة المركزة ساعدتني في اكتساب الثقة في شرح مفاهيم البرمجة المعقدة. كانت ملاحظات المنصة حول نهجي في حل المشكلات حاسمة في تحسين أدائي في المقابلات</p>
+                        <h2>المثال الثالث - مديرة مشاريع</h2>
+                        <p>حصلت على قيمة كبيرة من الخدمات الاستشارية. النهج المهني والاحترافي في التعامل، إلى جانب الخبرة العميقة في المجال، جعل التجربة مثمرة للغاية. أشعر بالامتنان للدعم والتوجيه الذي تلقيته خلال رحلتي المهنية.</p>
                     </div>
                 </div>
                 
                 <div class="testimonial-profiles">
                     <div class="profile active" data-id="1">
-                        <img src="./content/profile1.jpg" alt="سارة المحمد">
+                        <!-- <img src="./content/profile1.jpg" alt="المثال الأول"> -->
                         <div class="profile-info">
-                            <h3>سارة المحمد</h3>
-                            <p>مصممة واجهات المستخدم</p>
+                            <h3>المثال الأول</h3>
+                            <p>مستشارة تطوير</p>
                         </div>
                     </div>
                     <div class="profile" data-id="2">
-                        <img src="./content/profile2.jpg" alt="ياسمين ليفي">
+                        <!-- <img src="./content/profile2.jpg" alt="المثال الثاني"> -->
                         <div class="profile-info">
-                            <h3>ياسمين ليفي</h3>
-                            <p>مديرة مشاريع</p>
+                            <h3>المثال الثاني</h3>
+                            <p>مديرة أعمال</p>
                         </div>
                     </div>
                     <div class="profile" data-id="3">
-                        <img src="./content/profile3.jpg" alt="نور الهاشمي">
+                        <!-- <img src="./content/profile3.jpg" alt="المثال الثالث"> -->
                         <div class="profile-info">
-                            <h3>نور الهاشمي</h3>
-                            <p>مطورة برمجيات</p>
+                            <h3>المثال الثالث</h3>
+                            <p>مديرة مشاريع</p>
                         </div>
                     </div>
                 </div>
@@ -263,6 +278,28 @@
     </section>
 
    </section>
+
+   <section class="contact-section">
+    <div class="contact-section-header">
+        <h2>تواصل معنا</h2>
+    </div>
+    <div class="contact-container">
+        <p class="contact-description">يسعدنا تلقي رسائلكم واستفساراتكم</p>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder="الاسم الكامل">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="البريد الإلكتروني">
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" required placeholder="رسالتك"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+        </form>
+    </div>
+</section>
+
     
 
     <footer class="footer">
@@ -277,7 +314,7 @@
                 <div class="social-links">
                     <a href="#">تويتر</a>
                     <a href="#">لينكد إن</a>
-                    <a href="#">انستغرام</a>
+            
                 </div>
             </div>
         </div>
