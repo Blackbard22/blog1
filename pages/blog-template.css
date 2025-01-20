@@ -248,7 +248,7 @@
     color: #666;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 1200px) {
     .blog-post-container {
         width: 80%;
@@ -257,7 +257,7 @@
 
 @media (max-width: 768px) {
     .blog-post-container {
-        width: 90%;
+        width: 100%;
         padding: 1rem;
     }
 
@@ -275,6 +275,22 @@
 
     .share-buttons {
         flex-direction: column;
+    }
+
+
+    .blog-navbar {
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .social-float{
+      display: none;
+        
     }
 } 
 

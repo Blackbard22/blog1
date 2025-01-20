@@ -30,13 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navbar Scroll Animation
     gsap.registerPlugin(ScrollTrigger);
     
-    // Initially hide progress container
     gsap.set(".progress-container", {
         x: -100,
         opacity: 0
     });
 
-    // Create scroll trigger for progress container
     ScrollTrigger.create({
         trigger: ".about-section",
         start: "top center",
@@ -66,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentScrollY = window.scrollY;
         clearTimeout(scrollTimeout);
 
-        if (currentScrollY > lastScrollY && currentScrollY > 50 && !isAnimating) {
+        if (currentScrollY > lastScrollY && currentScrollY > 100 && !isAnimating) {
             isAnimating = true;
 
             gsap.to(".nav-links li:first-child", {
@@ -87,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 duration: 0.3,
                 ease: "power2.out"
             });
-        } else if (currentScrollY < 50 && isAnimating) {
+        } else if (currentScrollY < 100 && isAnimating) {
             gsap.to([
                 ".nav-links li:first-child",
                 ".logo",
@@ -106,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         lastScrollY = currentScrollY;
         scrollTimeout = setTimeout(() => {
-            if (currentScrollY < 50) {
+            if (currentScrollY < 400) {
                 isAnimating = false;
             }
         }, 300);
@@ -118,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.requestAnimationFrame(() => {
                 handleScroll();
                 ticking = false;
+
             });
             ticking = true;
         }

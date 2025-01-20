@@ -8,7 +8,7 @@
     width: 100%;
     padding: 0.5rem 2rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: start;
     align-items: center;
     font-size: var(--fs-md);
@@ -20,7 +20,6 @@
     font-weight: 600;
     color: #ff4081;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    /* margin-left: 2rem; */
     padding-right: auto;
 
 }
@@ -110,7 +109,7 @@
     cursor: pointer;
     z-index: 1002;
     margin-right: 0;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 
 .blog-nav-trigger span {
@@ -492,4 +491,6 @@ body{
     .share-buttons {
         flex-direction: column;
     }
+
+ 
 } 

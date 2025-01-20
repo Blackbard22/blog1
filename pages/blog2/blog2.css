@@ -213,8 +213,10 @@
     .blog-navbar {
         padding: 1rem 2rem;
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
 
     /* Style the consultation button */
@@ -230,6 +232,8 @@
         text-decoration: none;
         white-space: nowrap;
     }
+
+    
 }
 
 /* Blog specific styles */
@@ -270,6 +274,7 @@ body {
 
 .blog-container{
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -288,8 +293,8 @@ body {
     background: url('../../content/pattern.png');
     background-color: rgba(255, 255, 255, 0.4 );
     background-blend-mode: overlay;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size:cover;
+    background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
     height: 200px;  
@@ -300,9 +305,8 @@ body {
 .blog-header h1 {
     font-size: calc(var(--fs-xxl) + 3vw);
     font-weight: 700;
-    color: #2c3e50;
+    
     color: rgb(88, 5, 31);
-
    
 }
 
@@ -318,9 +322,7 @@ body {
 
 .blog-grid {
     display: flex;
-    /* grid-template-columns: repeat(3, 1fr); */
     flex-direction: column;
-    /* gap: 2.5rem; */
     width: 100%;
     padding: 2rem 0;
 }
@@ -328,7 +330,7 @@ body {
 .blog-card {
    
     overflow: hidden;
-    
+
     transition: transform 0.3s ease;
     
     backdrop-filter: blur(10px);
@@ -336,29 +338,32 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-items: center;
+    justify-content: center;
+ 
 }
 
-.blog-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
+
+
+
 
 .blog-card-image {
     width: 50%;
     height: 50%;
     overflow: hidden;
     border-radius: 5px;
-    /* display: flex;
-    justify-content: end; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .blog-card-image img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 50%;
     padding: 3rem 0 3rem 6rem;
-    /* padding-right: 0; */
+   
     object-fit: cover;
     transition: transform 0.3s ease;
+    
 }
 
 .blog-card:hover .blog-card-image img {
@@ -469,22 +474,8 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .blog-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .blog-container {
-        width: 90%;
-        padding: 0 1rem;
-    }
 
-    .blog-header {
-        padding: 4rem 0 2rem;
-    }
-}
 
-/* RTL specific adjustments */
 .blog-card-content {
     text-align: right;
 }
@@ -535,8 +526,8 @@ body {
 .filter-window {
     position: absolute;
     top: calc(100% + 10px);
-    right: 50%;
-    transform: translateX(50%);
+    right: -40%;
+    transform: translateX(38%);
     background: rgba(255, 255, 255, 0.95);
     padding: 1rem;
     border-radius: 10px;
@@ -563,16 +554,17 @@ body {
 .filter-window.active {
     display: block;
     animation: fadeIn 0.2s ease-out;
+    
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateX(50%) translateY(-10px);
+        /* transform: translateX(50%) translateY(-10px); */
     }
     to {
         opacity: 1;
-        transform: translateX(50%) translateY(0);
+        /* transform: translateX(50%) translateY(0); */
     }
 }
 
@@ -580,6 +572,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
+  
+    
 }
 
 .filter-option {
@@ -603,4 +597,148 @@ body {
 .filter-option.active {
     background: var(--theme-3);
     color: white;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .search-blogs{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+
+
+    .blog-card-image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 5px;
+        display: flex;
+        align-items: start;
+        margin-block: auto;
+    }
+    
+    .blog-card-image img {
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem ;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        
+    }
+
+
+    .blog-card h2 {
+        font-size: calc(var(--fs-xl) + 0.4vw);
+        color: #2c3e50;
+        margin-bottom: 0rem;
+        font-weight: 700;
+        font-family: var(--f-main);
+    
+    }
+    
+    .blog-excerpt {
+        font-size: calc(var(--fs-base) + 0.1vw);
+        color: #34495e;
+        opacity: 0.8;
+        margin-bottom: 0rem;
+        font-weight: 200;
+        line-height: 1.6;
+        font-family: var(--f-secondary);
+    }
+
+
+    .blog-card :nth-child(1){
+        flex-basis: 35%;
+    }
+
+    .blog-card :nth-child(2){
+        flex-basis: 65%;
+    }
+
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .blog-header {
+        padding: 4rem 0 2rem;
+    }
+
+    .blog-header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       
+        height: 150px;  
+        border-radius: 20px;
+     
+    }
+
+
+    .share-btn {
+        /* border: none;
+        background: none;
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center; */
+        margin-top: 5px;
+    }
+    
+    .share-btn img{
+        width: 23px;
+        height: 23px;
+    }
+
+
+
+
+    .filter-window {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: -300%;
+        transform: translateX(50%);
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        min-width: 200px;
+        display: none;
+        backdrop-filter: blur(10px);
+    }
+    
+    .filter-window::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: 0%;
+        right: unset;
+        transform: translateX(50%) rotate(45deg);
+        width: 16px;
+        height: 16px;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 2px;
+        z-index: -1;
+    }
+    
+    
 }
