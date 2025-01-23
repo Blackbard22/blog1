@@ -592,6 +592,7 @@ font-size: calc(var(--fs-md) + 0.2vw);
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
+    padding-top: 5vh;
 }
 
 
