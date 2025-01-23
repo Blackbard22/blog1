@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lateef:wght@200;300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lateef:wght@200;300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa+Ink:wght@400;700&family=Lateef:wght@200;300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     
 </head>
 
@@ -25,78 +25,110 @@
         <div class="progress-box" data-section="consultation"></div>
         <div class="progress-box" data-section="creative"></div>
         <div class="progress-box" data-section="testimonials"></div>
+        <div class="progress-box" data-section="contact"></div>
     </div>
 
 
     <header class="header-container">
-
+        <div class="background-image2"></div>
+        
+        <div class="hero-section">
         <nav class="navbar">
-            <div class="consultation">
-                <a href="/consultation">احجز استشارتك</a>
-            </div>
             <ul class="nav-links">
-                <li><a href="/consultation">احجز استشارتك</a></li>
-                <li><a href="/page2">مشاركات</a></li>
-                <li><a href="/pages/blog.html">مدونات</a></li>
+                <li><a href="#contact-section">احجز استشارتك</a></li>
+                <li><a href="/pages/blog2/blog2.html">مشاركات</a></li>
+                <li><a href="/pages/blog2/blog2.html">مدونات</a></li>
             </ul>
-            <div class="mobile-nav-trigger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="logo">
+                <div class="name-logo">
+                    <div class="logo-firstname">سمية</div>
+                    <div class="logo-lastname">السليماني</div>
+                </div>
             </div>
-            <div class="logo">ماريا</div>
         </nav>
+        <div class="mobile-nav">
+            <div class="mobile-consultation"><a href="#contact-section">احجز استشارتك</a></div>
+            <div class="mobile-nav-trigger">
+                <div class="mobile-nav-trigger-container">
+                    <span></span>
+                    <span></span>
+                </div>
+                
+            </div>
+            <div class="mobile-name-logo">
+                <div class="mobile-logo-firstname">سمية</div>
+                <div class="mobile-logo-lastname">السليماني</div>
+            </div>
 
+            <ul class="mobile-nav-links">
+                <li style="--index: 0"><a href="/page2">مشاركات</a></li>
+                <li style="--index: 1"><a href="/blog">مدونات</a></li>
+            </ul>
+        </div>
         <div class="hero-container">
             <header class="hero">
+                
                 <div class="hero-subsection">
-                    <img src="./content/cleaned_portrait2.png" alt="portrait">
+                    <img src="./content/cleaned_portrait2.png" alt="portrait" class="hero-image">
                     <div class="hero-text-container">
                         <h1 class="hero-title">سمية السليماني</h1>
                         <p class="subtitle">كاتبة مؤثرة ومهتمة بقضايا الإنسان والمجتمع. 
                             مؤمنة بالقراءة قولًا وفعلًا
                             شعارُها: فعلُ الكتابةِ أوكَد
+                            </p>                            
+                            <p class="hero-consultation">
+                                <a href="#contact-section" class="hero-consultation-btn">احجز استشارتك</a>
+                                <a href="#training-programs" class="hero-training-btn">
+                                    <img src="./content/arrow-right.svg" alt="" class="hero-training-arrow">
+                                    البرامج التدريبية
+                                </a>
                             </p>
-                        <p class="hero-text">
-                            بعد أكثر من (22) عامًا في ساحات التعليم، وبعد مشوارٍ جميلٍ من العمل في المدارس وبين الطلاب. وبعد جرأة التحوُّل الوظيفي من الإدارة المدرسية إلى الإدارة الإشرافية. وبعد سنواتٍ من التواصلِ والحوارِ مع شخصياتٍ مختلفةٍ وكثيرة. وبعد تجربة تأليف مناهج العلوم الإنسانية عامة واللغة العربية خاصة. وبعد عزلةِ الكتب وتأملِ أحداث الزمن وقراءةِ وجهِ الحياة وملامحِها وتقلبِ النَّاسِ فيها شقيٍّ وسعيد. وبعد أكثر من (45) عامًا من العمر على وجهِ هذه الأرض، آثرتُ الخروجَ للنَّاسِ بخبراتي فقد يكونُ فيها ما ينفعُهم نحو حياةٍ طيبةٍ مباركة.
-                            <br>
-                            هذه سمية، تقرأُ استفساراتِكم بكلِّ حبٍّ وتقدير
-    
-                        </p>
                     </div>
                 </div>
                 
             </header>
         </div>
+        </div>
+
     </header>
+
+
+
 
 
 
     
 
-
-
-
-
-
-    <div class="mobile-nav">
-        <ul class="mobile-nav-links">
-            <li><a href="/page2">مشاركات</a></li>
-            <li><a href="/blog">مدونات</a></li>
-        </ul>
-    </div>
+ 
 
    <section class="sections">
     <div class="background-image">
     </div>
 
-    <div class="background-image2"></div>
-    
 
     
 
-    <div class="scroll-under"></div>
     
+
+    <!-- <div class="scroll-under"></div> -->
+    
+
+    <div class="about-author">
+        <div class="about-name-logo">
+            <div class="about-logo-firstname">سمية</div>
+            <div class="about-logo-lastname">السليماني</div>
+        </div>
+        <div class="about-divider">   
+        </div>
+        <div class="about-author-text">
+            <h2 class="about-author-header">نُبْذَةٌ عَنِّي</h2>
+            <p >
+                بعد أكثر من (22) عامًا في ساحات التعليم، وبعد مشوارٍ جميلٍ من العمل في المدارس وبين الطلاب. وبعد جرأة التحوُّل الوظيفي من الإدارة المدرسية إلى الإدارة الإشرافية. وبعد سنواتٍ من التواصلِ والحوارِ مع شخصياتٍ مختلفةٍ وكثيرة. وبعد تجربة تأليف مناهج العلوم الإنسانية عامة واللغة العربية خاصة. وبعد عزلةِ الكتب وتأملِ أحداث الزمن وقراءةِ وجهِ الحياة وملامحِها وتقلبِ النَّاسِ فيها شقيٍّ وسعيد. وبعد أكثر من (45) عامًا من العمر على وجهِ هذه الأرض، آثرتُ الخروجَ للنَّاسِ بخبراتي فقد يكونُ فيها ما ينفعُهم نحو حياةٍ طيبةٍ مباركة.
+                <br>
+                هذه سمية، تقرأُ استفساراتِكم بكلِّ حبٍّ وتقدير
+            </p>
+        </div>
+    </div>
 
     <section id="about" class="about-section">
         <div class="about-title">
@@ -104,10 +136,10 @@
                 <h2>الكتابة قيد وملخصات الكتب التي قرأتها</h2>
             </div>
             <div class="carousel-controls">
-                <button class="carousel-button prev">
+                <button class="carousel-button prev" aria-label="Previous">
                     <img src="./content/arrow.svg" alt="prev">
                 </button>
-                <button class="carousel-button next">
+                <button class="carousel-button next" aria-label="Next">
                     <img src="./content/arrow.svg" alt="next">
                 </button>
             </div>
@@ -147,8 +179,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel-slide">
+                    <div class="about-card">
+                        <img src="./content/speaking.png" alt="book2">
+                        <h3>الكتاب الثاني</h3>
+                        <p>ان وتم صفحة التّحول الأمريكية, تونس يتمكن الربيع، و قام. جسيمة والقرى مليارات جُل في, أفاق أراض مليون جهة با.</p>
+                        <div class="about-read-more">
+                            <p>اقرا المزيد</p>
+                            <img src="./content/arrow-up.svg" alt="arrow"/>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="pagination">
+            <!-- <div class="pagination">
                
                 <div class="carousel-dots">
                     <span class="dot active"></span>
@@ -156,12 +199,12 @@
                     <span class="dot"></span>
                 </div>
 
-            </div>
+            </div> -->
         </div>
         <div class="section-header">
             <h2>البرامج التدريبية</h2>
         </div>
-        <div class="grid-sections">
+        <div id="training-programs" class="grid-sections">
             <div class="grid-item">
                 <img src="./content/emotion.png" alt="emotion img">
                 <h2>الذكاء العاطفي</h2>
@@ -173,8 +216,12 @@
                 <h2>معجزة الكلام</h2>
                 <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. يمكن أن يتم تعديل هذا النص أو استبداله بنص آخر. الهدف من هذا النص هو أن يحتل مساحة في التصميم.</p>
             </div>
+           
             <div class="grid-separator-horizontal"></div>
-            <div class="grid-item">
+           
+            
+           
+            <!-- <div class="grid-item">
                 <h2>المثال الثالث</h2>
                 <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. يمكن أن يتم تعديل هذا النص أو استبداله بنص آخر. الهدف من هذا النص هو أن يحتل مساحة في التصميم.</p>
             </div>
@@ -182,7 +229,7 @@
             <div class="grid-item">
                 <h2>المثال الرابع</h2>
                 <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. يمكن أن يتم تعديل هذا النص أو استبداله بنص آخر. الهدف من هذا النص هو أن يحتل مساحة في التصميم.</p>
-            </div>
+            </div> -->
         </div>
 
         <section class="consultation-section">
@@ -281,7 +328,7 @@
 
    </section>
 
-   <section class="contact-section">
+   <section id="contact-section" class="contact-section">
     <div class="contact-section-header">
         <h2>تواصل معنا</h2>
     </div>
@@ -302,28 +349,41 @@
     </div>
 </section>
 
-    
 
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>تواصل معنا</h3>
+                <div class="footer-section-header">
+                    <h3>تواصل معي</h3>
+                    <img src="./content/arrow-right.svg" alt="arrow"/>
+                </div>
                 <p>البريد الإلكتروني: contact@example.com</p>
                 <p>الهاتف: 4567-123 (555)</p>
             </div>
             <div class="footer-section">
-                <h3>تابعنا</h3>
+                <div class="footer-section-header">
+                    <h3>تابعني</h3>
+                    <img src="./content/arrow-right.svg" alt="arrow"/>
+                </div>
                 <div class="social-links">
                     <a href="#">تويتر</a>
                     <a href="#">لينكد إن</a>
             
                 </div>
             </div>
+            <div class="footer-section">
+                <div class="footer-section-header">
+                    <h3>الصفحات</h3>
+                    <img src="./content/arrow-right.svg" alt="arrow"/>
+                </div>
+                <a href="/pages/blog2/blog2.html">مشاركات</a>
+                <a href="/pages/blog2/blog2.html">مدونات</a>
+            </div>
         </div>
         <div class="footer-bottom">
             <p>جميع الحقوق محفوظة © 2024</p>
         </div>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
 </body>
 </html>

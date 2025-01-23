@@ -11,26 +11,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lateef:wght@200;300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script src="../../js/main.js" defer></script>
 </head>
 <body>
-    <nav class="blog-navbar">
-        <div class="blog-logo">سمية السليماني</div>
-        <ul class="blog-nav-links">
-            <li><a href="/consultation">احجز استشارتك</a></li>
-            <li><a href="/page2">مشاركات</a></li>
-            <li><a href="/blog">مدونات</a></li>
+   
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#contact-section">احجز استشارتك</a></li>
+            <li><a href="/pages/blog2/blog2.html">مشاركات</a></li>
+            <li><a href="/pages/blog2/blog2.html">مدونات</a></li>
         </ul>
-        <div class="blog-nav-trigger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="logo">
+            <div class="name-logo">
+            <a href="/index.html">
+
+                <div class="logo-firstname">سمية</div>
+                <div class="logo-lastname">السليماني</div>
+            </a>
+            </div>
         </div>
     </nav>
+    <div class="mobile-nav">
+        <div class="mobile-consultation"><a href="#contact-section">احجز استشارتك</a></div>
+        <div class="mobile-nav-trigger">
+            <div class="mobile-nav-trigger-container">
+                <span></span>
+                <span></span>
+            </div>
+            
+        </div>
+        <div class="mobile-name-logo">
+            <a href="/index.html">
+                <div class="mobile-logo-firstname">سمية</div>
+                <div class="mobile-logo-lastname">السليماني</div>
+            </a>
+           
+        </div>
 
-    <div class="blog-mobile-nav">
-        <ul class="blog-mobile-links">
-            <li><a href="/page2">مشاركات</a></li>
-            <li><a href="/blog">مدونات</a></li>
+        <ul class="mobile-nav-links">
+            <li style="--index: 0"><a href="/pages/blog2/blog2.html">مشاركات</a></li>
+            <li style="--index: 1"><a href="/pages/blog2/blog2.html">مدونات</a></li>
         </ul>
     </div>
 
@@ -64,14 +85,19 @@
 
     <main class="blog-grid">
         <article class="blog-card">
-            <div class="blog-card-image">
-                <img src="../../content/down1.jpg" alt="مقال عن التعليم">
-            </div>
-            <div class="blog-card-content">
-                <h2>عنوان المقال الأول</h2>
-                <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة...</p>
-                <div class="blog-meta">
+            <a href="/pages/blog-template.html">
+            <div class="blog-card-main">
+                <div class="blog-card-image">
+                    <img src="../../content/down1.jpg" alt="مقال عن التعليم">
+                </div>
+                <div class="blog-card-content">
                     <span class="blog-date">٥ يناير ٢٠٢٤</span>
+                    <h2>عنوان المقال الأول</h2>
+                    <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة...</p>
+                </div>
+            </div>
+            <div class="blog-card-footer">
+                <div class="blog-meta">
                     <div class="blog-share">
                         <button class="share-btn twitter" onclick="shareOnTwitter()">
                             <img src="../../content/twitter.svg" alt="twitter">
@@ -89,19 +115,28 @@
                             </p>
                     </div>
                  </a>
-
             </div>
+            </a>
         </article>
 
         <article class="blog-card">
-            <div class="blog-card-image">
-                <img src="../../content/speaking.png" alt="مقال عن التطوير">
+            <a href="/pages/blog-template.html">
+            <div class="blog-card-main">
+                <div class="blog-card-image">
+                    <img src="../../content/speaking.png" alt="مقال عن التعليم">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-date">٥ يناير ٢٠٢٤</span>
+                    <h2>عنوان المقال الأول</h2>
+                    <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة...</p>
+                    
+                    
+        
+                </div>
+               
             </div>
-            <div class="blog-card-content">
-                <h2>عنوان المقال الثاني</h2>
-                <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة...</p>
+            <div class="blog-card-footer">
                 <div class="blog-meta">
-                    <span class="blog-date">٣ يناير ٢٠٢٤</span>
                     <div class="blog-share">
                         <button class="share-btn twitter" onclick="shareOnTwitter()">
                             <img src="../../content/twitter.svg" alt="twitter">
@@ -111,7 +146,7 @@
                         </button>
                     </div>
                 </div>
-                <a href="#" ></a>
+                <a href="#" >
                     <div class="read-more">
                         <img src="../../content/arrow-up.svg" alt="arrow" >
                             <p>
@@ -120,46 +155,28 @@
                     </div>
                  </a>
             </div>
+            </a>
         </article>
 
  
         <article class="blog-card">
-            <div class="blog-card-image">
-                <img src="../../content/down1.jpg" alt="مقال عن الابتكار">
-            </div>
-            <div class="blog-card-content">
-                <h2>عنوان المقال الثالث</h2>
-                <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة...</p>
-                <div class="blog-meta">
-                    <span class="blog-date">١ يناير ٢٠٢٤</span>
-                    <div class="blog-share">
-                        <button class="share-btn twitter" onclick="shareOnTwitter()">
-                            <img src="../../content/twitter.svg" alt="twitter">
-                        </button>
-                        <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
-                            <img src="../../content/linkedin.svg" alt="linkedin">
-                        </button>
-                    </div>
+            <a href="/pages/blog-template.html">
+            <div class="blog-card-main">
+                <div class="blog-card-image">
+                    <img src="../../content/down1.jpg" alt="مقال عن التعليم">
                 </div>
-                <a href="#" ></a>
-                    <div class="read-more">
-                        <img src="../../content/arrow-up.svg" alt="arrow" >
-                            <p>
-                                اقرأ المزيد
-                            </p>
-                    </div>
-                 </a>
-            </div>
-        </article>
-        <article class="blog-card">
-            <div class="blog-card-image">
-                <img src="../../content/down1.jpg" alt="مقال عن التعليم">
-            </div>
-            <div class="blog-card-content">
-                <h2>عنوان المقال الأول</h2>
-                <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة...</p>
-                <div class="blog-meta">
+                <div class="blog-card-content">
                     <span class="blog-date">٥ يناير ٢٠٢٤</span>
+                    <h2>عنوان المقال الأول</h2>
+                    <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة...</p>
+                    
+                    
+        
+                </div>
+               
+            </div>
+            <div class="blog-card-footer">
+                <div class="blog-meta">
                     <div class="blog-share">
                         <button class="share-btn twitter" onclick="shareOnTwitter()">
                             <img src="../../content/twitter.svg" alt="twitter">
@@ -177,8 +194,46 @@
                             </p>
                     </div>
                  </a>
-    
             </div>
+            </a>
+        </article>
+        <article class="blog-card">
+            <a href="/pages/blog-template.html">
+            <div class="blog-card-main">
+                <div class="blog-card-image">
+                    <img src="../../content/speaking.png" alt="مقال عن التعليم">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-date">٥ يناير ٢٠٢٤</span>
+                    <h2>عنوان المقال الأول</h2>
+                    <p class="blog-excerpt">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة...</p>
+                    
+                    
+        
+                </div>
+               
+            </div>
+            <div class="blog-card-footer">
+                <div class="blog-meta">
+                    <div class="blog-share">
+                        <button class="share-btn twitter" onclick="shareOnTwitter()">
+                            <img src="../../content/twitter.svg" alt="twitter">
+                        </button>
+                        <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
+                            <img src="../../content/linkedin.svg" alt="linkedin">
+                        </button>
+                    </div>
+                </div>
+                <a href="#" >
+                    <div class="read-more">
+                        <img src="../../content/arrow-up.svg" alt="arrow" >
+                            <p>
+                                اقرأ المزيد
+                            </p>
+                    </div>
+                 </a>
+            </div>
+            </a>
         </article>
     </main>
 
@@ -193,19 +248,35 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>تواصل معنا</h3>
-                <p>البريد الإلكتروني: info@example.com</p>
+                <div class="footer-section-header">
+                    <h3>تواصل معي</h3>
+                    <img src="../../content/arrow-right.svg" alt="arrow"/>
+                </div>
+                <p>البريد الإلكتروني: contact@example.com</p>
+                <p>الهاتف: 4567-123 (555)</p>
             </div>
             <div class="footer-section">
-                <h3>تابعنا</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i> تويتر</a>
-                    <a href="#"><i class="fab fa-linkedin"></i> لينكد إن</a>
+                <div class="footer-section-header">
+                    <h3>تابعني</h3>
+                    <img src="../../content/arrow-right.svg" alt="arrow"/>
                 </div>
+                <div class="social-links">
+                    <a href="#">تويتر</a>
+                    <a href="#">لينكد إن</a>
+            
+                </div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-section-header">
+                    <h3>الصفحات</h3>
+                    <img src="../../content/arrow-right.svg" alt="arrow"/>
+                </div>
+                <a href="/pages/blog2/blog2.html">مشاركات</a>
+                <a href="/pages/blog2/blog2.html">مدونات</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>جميع الحقوق محفوظة © ٢٠٢٤</p>
+            <p>جميع الحقوق محفوظة © 2024</p>
         </div>
     </footer>
 

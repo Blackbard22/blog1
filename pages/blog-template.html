@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="blog-template.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script src="../../js/main.js" defer></script>
 </head>
 <body>
    
-    <nav class="blog-navbar">
+    <!-- <nav class="blog-navbar">
         <div class="blog-logo">سمية السليماني</div>
         <ul class="blog-nav-links">
             <li><a href="/consultation">احجز استشارتك</a></li>
@@ -30,6 +31,47 @@
         <ul class="blog-mobile-links">
             <li><a href="/page2">مشاركات</a></li>
             <li><a href="/blog">مدونات</a></li>
+        </ul>
+    </div> -->
+
+
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#contact-section">احجز استشارتك</a></li>
+            <li><a href="/pages/blog2/blog2.html">مشاركات</a></li>
+            <li><a href="/pages/blog2/blog2.html">مدونات</a></li>
+        </ul>
+        <div class="logo">
+            <div class="name-logo">
+            <a href="/index.html">
+
+                <div class="logo-firstname">سمية</div>
+                <div class="logo-lastname">السليماني</div>
+            </a>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-nav">
+        <div class="mobile-consultation"><a href="#contact-section">احجز استشارتك</a></div>
+        <div class="mobile-nav-trigger">
+            <div class="mobile-nav-trigger-container">
+                <span></span>
+                <span></span>
+            </div>
+            
+        </div>
+        <div class="mobile-name-logo">
+            <a href="/index.html">
+                <div class="mobile-logo-firstname">سمية</div>
+                <div class="mobile-logo-lastname">السليماني</div>
+            </a>
+           
+        </div>
+
+        <ul class="mobile-nav-links">
+            <li style="--index: 0"><a href="/pages/blog2/blog2.html">مشاركات</a></li>
+            <li style="--index: 1"><a href="/pages/blog2/blog2.html">مدونات</a></li>
         </ul>
     </div>
 
@@ -70,7 +112,7 @@
             <img src="../content/speaking.png" alt="صورة المقال">
         </div>
 
-        <!-- Blog Post Content -->
+        
         <article class="blog-post-content">
             <p class="blog-post-excerpt">
                 هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
@@ -90,12 +132,37 @@
                 هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
             </p>
 
-            
-            
         </article>
 
+        <section class="comments-section">
+            <h2>التعليقات</h2>
+            <div class="comments-container">
+                <form class="comment-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="الاسم">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="comment" name="comment" required placeholder="اكتب تعليقك هنا"></textarea>
+                    </div>
+                    <button type="submit" class="submit-comment">إرسال التعليق</button>
+                </form>
+
+                <!-- Comments List -->
+                <div class="comments-list">
+                    <!-- Example Comment -->
+                    <div class="comment">
+                        <div class="comment-header">
+                            <h3>أحمد محمد</h3>
+                            <span class="comment-date">٥ يناير ٢٠٢٤</span>
+                        </div>
+                        <p class="comment-text">هذا تعليق تجريبي يمكن استبداله بمحتوى حقيقي. يمكن أن يكون التعليق أطول من هذا ويحتوي على المزيد من التفاصيل.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Related Posts -->
-        <section class="related-posts">
+        <!-- <section class="related-posts">
             <h2>مقالات ذات صلة</h2>
             <div class="related-posts-grid">
                 <article class="related-post-card">
@@ -113,26 +180,42 @@
                     </div>
                 </article>
             </div>
-        </section>
+        </section> -->
     </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>تواصل معنا</h3>
-                <p>البريد الإلكتروني: info@example.com</p>
+                <div class="footer-section-header">
+                    <h3>تواصل معي</h3>
+                    <img src="../../content/arrow-right.svg" alt="arrow"/>
+                </div>
+                <p>البريد الإلكتروني: contact@example.com</p>
+                <p>الهاتف: 4567-123 (555)</p>
             </div>
             <div class="footer-section">
-                <h3>تابعنا</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i> تويتر</a>
-                    <a href="#"><i class="fab fa-linkedin"></i> لينكد إن</a>
+                <div class="footer-section-header">
+                    <h3>تابعني</h3>
+                    <img src="../../content/arrow-right.svg" alt="arrow"/>
                 </div>
+                <div class="social-links">
+                    <a href="#">تويتر</a>
+                    <a href="#">لينكد إن</a>
+            
+                </div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-section-header">
+                    <h3>الصفحات</h3>
+                    <img src="../../content/arrow-right.svg" alt="arrow"/>
+                </div>
+                <a href="/pages/blog2/blog2.html">مشاركات</a>
+                <a href="/pages/blog2/blog2.html">مدونات</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>جميع الحقوق محفوظة © ٢٠٢٤</p>
+            <p>جميع الحقوق محفوظة © 2024</p>
         </div>
     </footer>
 
