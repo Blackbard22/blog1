@@ -2749,7 +2749,7 @@ font-size: calc(var(--fs-md) + 0.2vw);
     }
 
     .background-image2{
-        height: 10vh;
+        height: 0vh;
         width: 100vw;
         position: absolute;
         opacity:0.9;
@@ -2762,6 +2762,7 @@ font-size: calc(var(--fs-md) + 0.2vw);
         z-index: -1;
         max-width: var(--max-width);
         box-shadow: 0 0 20px 2px black inset;
+        display: none;
     
     }
     .hero-container{
@@ -2773,7 +2774,7 @@ font-size: calc(var(--fs-md) + 0.2vw);
 
     .header-container{
         margin: 0;
-        margin-top: 10vh;
+        margin-top: 0vh;
         width: 100%;
         max-width: unset;
         height: 80vh;
