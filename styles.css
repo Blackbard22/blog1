@@ -1122,7 +1122,7 @@ font-size: calc(var(--fs-md) + 0.2vw);
     max-width: 1400px;
     margin: 0 auto;
     direction: rtl;
-    min-height: 80vh;
+    min-height: unset;
     height: auto;
 }   
 
