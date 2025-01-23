@@ -2757,7 +2757,7 @@ font-size: calc(var(--fs-md) + 0.2vw);
         left: 0%;
         background: url('./content/pattern.png') no-repeat;
         background-position: center;
-        background-size:cover;
+        background-size:contain;
         background-attachment: fixed;
         z-index: -1;
         max-width: var(--max-width);
